@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- JQuery Mobile -->
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <title>Register</title>
+  </head>
+  <body>
+    <div id="main" data-role="page">
+      <!-- Header -->
+      <header data-role="header" data-position="fixed" data-theme="b">
+        <h1>
+          <img
+            src="images/ccit.png"
+            height="100px"
+            alt="Header Image"
+            style="display: inline"
+          />
+        </h1>
+        <h1>Registration</h1>
+        <a
+          href="index.html"
+          class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-carat-l"
+        >
+          Back</a
+        >
+        <div data-role="navbar">
+          <a
+            href="student.html"
+            data-role="button"
+            data-inline="true"
+            data-transition="pop"
+            >Student</a
+          >
+          <a
+            href="about.html"
+            data-role="button"
+            data-inline="true"
+            data-transition="flip"
+          >
+            About Us</a
+          >
+          <a
+            href="listView.html"
+            data-role="button"
+            data-inline="true"
+            data-transition="slidefade"
+            >List View</a
+          >
+        </div>
+      </header>
+
+      <!-- Content -->
+      <div data-role="content" class="ui-content customfont">
+        <form method="post" action="#">
+          <label for="name">Name</label>
+          <input type="text" name="fname" id="name" />
+
+          <label for="address">Address :</label>
+          <textarea cols="5" rows="80" name="address" id="textarea"> </textarea>
+
+          <fieldset data-role="controlgroup" data-type="horizontal">
+            <div class="ui-grid-b">
+              <div class="ui-block-a">
+                <label for="name">Gender</label>
+              </div>
+              <div class="ui-block-b">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" value="male" />
+              </div>
+              <div class="ui-block-c">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" value="female" />
+              </div>
+            </div>
+          </fieldset>
+          <label for="slider-1">Age</label>
+          <input
+            type="range"
+            name="slider-1"
+            id="slider-1"
+            value="21"
+            min="18"
+            max="60"
+          />
+          <input type="submit" value="Submit" data-inline="true" />
+        </form>
+      </div>
+
+      <!-- Footer -->
+      <footer data-role="footer" data-position="fixed" data-theme="b">
+        <h3>&copy; Copryright - RMN 2022</h3>
+      </footer>
+    </div>
+  </body>
+</html>
